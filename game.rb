@@ -1,5 +1,7 @@
 require 'gosu'
+require 'sinatra'
 
+get '/' do
 class Player
   attr_reader :x, :y, :width, :height
 
@@ -86,3 +88,4 @@ class GameWindow < Gosu::Window
 end
 
 GameWindow.new.show
+end
